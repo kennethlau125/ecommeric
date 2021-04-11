@@ -1,1 +1,1 @@
-# ecommeric
+# ecommerce
