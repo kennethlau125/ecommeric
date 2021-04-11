@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <title>LCYBShop_AddShoes</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="background">
+        <div class="bar">
+            <img src="{{ url_for('static',filename='img/logo.png')}}" class="logo">
+            <ul>
+                <li><a href="{{ url_for('home')}}" target="blank" title="Go to Home page">Home</a></li>
+                <li><a href="{{ url_for('clothes')}}" target="blank" title="Go to Clothes page">Clothes</a></li>
+                <li><a href="{{ url_for('shoes')}}" target="blank" title="Go to Shoes page">Shoes</a></li>
+                <li><a href="{{ url_for('add')}}" target="blank" title="Go to Add page">Add</a></li>
+                <li><a href="{{ url_for('about')}}"target="blank" title="Go to About page">About</a></li>
+                <li><a href="{{ url_for('login')}}"target="blank" title="Go to login page">Logout</a></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <form id="upload-form"  method="POST" enctype="multipart/form-data">
+                <h1>New Shoes:</h1><br>
+                <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+                <div id="msg"></div>
+                <h1>Name:</h1><br>
+                <input id="name" name="shoes_name" placeholder="Enter name of product">
+                <h1>Price:</h1><br>
+                <input type="number" id="price" name="shoes_price" placeholder="Enter price of product">
+                <input type="submit" value="Upload" id="upload-button">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

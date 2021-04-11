@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <title>LCYBShop_Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <div class="background">
+        <div class="bar">
+            <img src="{{ url_for('static',filename='img/logo.png')}}" class="logo">
+
+        </div>
+    
+        <div class="Loginsystem">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group" method="POST" action="{{url_for('login')}}">
+                <h1>Login Here</h1>
+                <p>Username</p>
+                <input type="text" name="login_username" placeholder="Enter your Username">
+                <p>Password</p>
+                <input type="password" name="login_password" placeholder="Enter your Password">
+                <p><input type="submit"  vaule="login"></p>
+
+            </form>
+
+
+            <form id="register"class="input-group"method="POST" action="{{url_for('register')}}">
+                <h1>Register</h1>
+                <p>Username</p>
+                <input type="text" name="register_username" placeholder="Enter your Username">
+                <p>Email Address</p>
+                <input type="text" name="register_email" placeholder="Enter your Email Address">
+                <p>Password</p>
+                <input type="password" name="register_password" placeholder="Enter your Password">
+                <p>Confirm Password</p>
+                <input type="password"  name="register_confirm_password" placeholder="Enter your Password">
+                <p><input type="submit" class="submit-btn" vaule=""></p>
+            </form>
+
+
+
+        </div>
+    </div>
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "100px";
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0px";
+                }
+            </script>
+</body>
+</html>

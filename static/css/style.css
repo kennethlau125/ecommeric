@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0,0,0,0.75)),url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 100px;
+    cursor:pointer;
+}
+.bar{
+    width:85%;
+    margin: auto;
+    padding: 35px ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:  20px;
+}
+
+.bar ul li a{
+    text-decoration: none;
+    color: #ffd310;
+    text-transform: uppercase;
+}
+
+.content{
+    color:yellow;
+    padding-top: 20px;
+    padding-left: 10%;
+    margin: 50px 0;
+    align-items:flex-start;
+}
+
+.content a{
+    color: yellow;
+}
+.Loginsystem{
+    width: 350px;
+    height: 600px;
+    background-color: rgba(207, 23, 23, 0.788);
+    background-size: cover;
+    color: #fff;
+    top: 30%;
+    left: 40%;
+    position:fixed;
+    box-sizing: border-box;
+    padding: 45px;
+    margin: 6px auto;
+    overflow: hidden;
+}
+
+h1{
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 40px;
+
+}
+
+.loginsystem p{
+    margin: 0;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.button-box{
+    width: 220px;
+    margin: 5px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #c4e412, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group{
+    top: 100px;
+    position: absolute;
+    width: 270px;
+    transition: 0.5s;
+}
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+#adminregister{
+    left: 850px;
+}
+.loginsystem input{
+    margin-bottom: 10px;
+}
+.loginsystem input[type="text"], input[type="password"]{
+    width:100%;
+    border: none;
+    border-bottom: 4px solid rgb(44, 216, 67);
+    outline: none;
+    height: 30;
+}
+
+.loginsystem input[type="submit"]{
+    margin: 0;
+    margin-left: 75px;
+    padding: 5px;
+    width: 35%;
+    height: 30px;
+    background:rgb(208, 218, 75);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.loginsystem input[type="submit"]:hover{
+    cursor: pointer;
+    background: #545bc5;
+    color:#000;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background:rgb(208, 218, 75);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background: #545bc5;
+    color:#000;
+}
+
+.loginsystem a{
+    text-decoration: none;
+    margin: 45px;
+    padding: 0;
+    line-height: 60px;
+    font-weight: bold;
+    color: darkgrey;
+    cursor: pointer;
+}
+
+.loginsystem a:hover{
+    color: #ffc107;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.Product-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 15px;
+}
+.Product{
+    flex-basis: 15%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    font-size: 15px;
+
+}
+.Product img{
+    width: 50%;
+}
